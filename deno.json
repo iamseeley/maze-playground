@@ -1,0 +1,10 @@
+{
+  "tasks": {
+    "dev": "deno run --watch --allow-read --allow-net main.ts",
+    "bundle": "esbuild ui/app.ts --bundle --outfile=ui/js/bundle.js --minify"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1"
+  }
+}
+

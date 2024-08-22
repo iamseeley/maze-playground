@@ -1,1 +1,1 @@
-# maze-playground
+# maze playground

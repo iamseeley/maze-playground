@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maze Generation Playground</title>
+    <!-- Link to the CSS file in the /ui directory -->
+    <link href="/ui/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h2>Maze Generation Playground</h2>
+    </header>
+
+    <main>
+
+    <!-- Algorithm Selection Dropdown -->
+    <div>
+      <label for="algorithm-select">Select Algorithm:</label>
+      <select id="algorithm-select">
+        <option value="dfs">Depth-First Search</option>
+        <option value="prim">Prim's Algorithm</option>
+        <option value="kruskal">Kruskal's Algorithm</option>
+      </select>
+    </div>
+
+    <div>
+      <label>Let it do its thing :)</label>
+      <button id="generate-button">Generate</button>
+    </div>
+
+    <!-- Slider for stepping through the maze generation -->
+    <div id="slider-wrapper">
+      <label for="step-slider">Step through the maze generation:</label>
+      <input type="range" id="step-slider" min="0" max="100" value="0">
+    </div>
+
+    <!-- Canvas for Maze Rendering -->
+    <div>
+      <canvas id="maze-canvas"></canvas>
+    </div>
+      
+    <div>
+      <h4>Resources</h4>
+      <div id="resources">
+        <p>Andrew Healey's <a href="https://healeycodes.com/generating-mazes" target="_blank"><em>Generating Mazes</em></a></p>
+      </div>
+    </div>
+
+    </main>
+
+    <script src="/ui/js/bundle.js"></script>
+  </body>
+</html>
+
