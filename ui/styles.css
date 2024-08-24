@@ -17,6 +17,12 @@ main {
   gap: 1rem;
 }
 
+button {
+  background-color: grey;
+  padding: .2rem;
+  border-radius: .2rem;
+}
+
 p {
   margin: 0;
 }
